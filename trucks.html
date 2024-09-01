@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Truck Manufacturers</title>
+    <style>
+        body {
+            background-image: url('https://pridetransportation.blob.core.windows.net/uploads/cms/Blog/transformers-movie.jpeg');
+            background-size: cover;
+            text-align: center;
+        }
+        .truck-links a {
+            margin-right: 20px;
+        }
+        .truck-image {
+            display: none;
+            margin: 20px auto;
+            max-width: 90%;
+            height: auto;
+        }
+        .active {
+            display: block;
+        }
+        h1, h3 {
+            font-family: lato;
+        }
+        h1 {
+            color: green;
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        .title-blue {
+            color: blue;
+        }
+        .title-gold {
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <h1>TOP</h1>
+    <h3 class="title-blue">COMMERCIAL TRUCK MANUFACTURERS</h3>
+    <h3 class="title-gold">IN THE WORLD</h3>
+    
+    <div class="truck-links">
+        <a href="#" onclick="showImage('volvo')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\download.jpg" alt="VOLVO" width="50">
+            
+        </a>
+        <a href="#" onclick="showImage('mack')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th.jpeg" alt="MACK" width="50">
+           
+        </a>
+        <a href="#" onclick="showImage('iveco')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\240522-Iveco-pace-truck.webp" alt="IVECO" width="50">
+           
+        </a>
+        <a href="#" onclick="showImage('scania')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (1).jpeg" alt="SCANIA" width="50">
+          
+        </a>
+        <a href="#" onclick="showImage('hino')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (2).jpeg" alt="HINO" width="50">
+            
+        </a>
+        <a href="#" onclick="showImage('amw')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\2500-4900_2nd_generation_17949.jpg" alt="AMW" width="50">
+         
+        </a>
+        <a href="#" onclick="showImage('paccar')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (3).jpeg" alt="PACCAR" width="50">
+           
+        </a>
+        <a href="#" onclick="showImage('mercedes')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (10).jpeg" alt="MERCEDES BENZ" width="50">
+           
+        </a>
+        <a href="#" onclick="showImage('daf')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (5).jpeg" alt="DAF" width="50">
+            
+        </a>
+        <a href="#" onclick="showImage('navistar')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (6).jpeg" alt="NAVISTAR" width="50">
+            
+        </a>
+        <a href="#" onclick="showImage('ud_trucks')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (7).jpg" alt="UD TRUCKS" width="50">
+            
+        </a>
+        <a href="#" onclick="showImage('dmc')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (8).jpeg" alt="DMC" width="50">
+           
+        </a>
+        <a href="#" onclick="showImage('tata')">
+            <img src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (9).jpeg" alt="TATA" width="50">
+         
+        </a>
+    </div>
+
+    <img id="volvo" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\download.jpeg" alt="VOLVO">
+    <img id="mack" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th.jpeg" alt="MACK">
+    <img id="iveco" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\240522-Iveco-pace-truck.webp" alt="IVECO">
+    <img id="scania" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (1).jpeg" alt="SCANIA">
+    <img id="hino" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (2).jpeg" alt="HINO">
+    <img id="amw" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\2500-4900_2nd_generation_17949.jpg" alt="AMW">
+    <img id="paccar" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (3).jpeg" alt="PACCAR">
+    <img id="mercedes" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (10).jpeg" alt="MERCEDES BENZ">
+    <img id="daf" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (5).jpeg" alt="DAF">
+    <img id="navistar" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (6).jpeg" alt="NAVISTAR">
+    <img id="ud_trucks" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (7).jpeg" alt="UD TRUCKS">
+    <img id="dmc" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (8).jpeg" alt="DMC">
+    <img id="tata" class="truck-image" src="c:\\Users\\abith\\OneDrive\\Pictures\\Saved Pictures\\th (9).jpeg" alt="TATA">
+
+    <script>
+        function showImage(id) {
+            var images = document.querySelectorAll('.truck-image');
+            images.forEach(function(image) {
+                image.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>
